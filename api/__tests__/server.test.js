@@ -13,12 +13,11 @@ afterAll(async () => {
   await db.destroy()
 })
 
-it('sanity check', () => {
-  expect(true).not.toBe(false)
-})
-
-describe('server.js', () => {
-  it('is the correct testing environment', async () => {
+describe('Sanity & environment testing!', () => {
+  it('[1] sanity check', () => {
+    expect(true).not.toBe(false)
+  })
+  it('[2] is the correct testing environment', async () => {
     expect(process.env.NODE_ENV).toBe('testing')
   })
 })
