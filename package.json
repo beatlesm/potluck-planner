@@ -4,6 +4,7 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
+    "heroku-postbuild": "cd client && npm i && npm run build",
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
